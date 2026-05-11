@@ -1,0 +1,23 @@
+.sidebar-header { padding: 12px 16px !important; }
+
+/* Flex layout for sidebar + main content wrapper */
+.sidebar-wrapper {
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar-wrapper aside {
+    /* Ensure sidebar keeps its intended width */
+    width: 250px; 
+    flex-shrink: 0;
+}
+
+.sidebar-wrapper .main-content {
+    flex-grow: 1;
+    overflow-x: hidden;
+}
+
+/* Employee Dashboard Specific */
+@media print { .no-print { display: none !important; } .main-content { margin: 0; padding: 0; } .chart-container { border: none; box-shadow: none; } }
+.filter-row { display: flex; gap: 15px; align-items: center; margin-bottom: 20px; }
+.filter-row select, .filter-row input { padding: 10px; border-radius: 8px; border: 1px solid #ddd; outline: none; }
