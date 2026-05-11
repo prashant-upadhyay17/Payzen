@@ -16,17 +16,17 @@ $host = 'localhost';
 // Detect environment based on domain
 if ($_SERVER['HTTP_HOST'] == "payzen.in" || $_SERVER['HTTP_HOST'] == "www.payzen.in")
 {
-    $db = 'payzen';
-    $user = 'root';
-    $pass = '';
+    $db = 'db_name';
+    $user = 'db_user';
+    $pass = 'db_pass';
 }
 
 else
 {
     // Localhost settings
-    $db = "payzen";
-    $user = "root";
-    $pass = "";
+    $db = "db_name";
+    $user = "db_user";
+    $pass = "db_pass";
     
 }
 
